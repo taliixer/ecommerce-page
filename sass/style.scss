@@ -1,0 +1,16 @@
+@use 'initial';
+@use 'variables';
+@use 'header';
+@use 'navbar';
+@use 'modal-navbar';
+
+.main-container{
+    width: 100%;
+    min-width: 320px;
+    max-width: 450px;
+    border:  1px solid red;
+    margin: 0 auto;
+    @media(min-width: 1115px) {
+        min-width: 1115px;        
+    }
+}

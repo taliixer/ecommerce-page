@@ -1,0 +1,74 @@
+@use 'variables';
+
+.header{
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    @media (min-width: 1115px){
+        height: 112px;
+        border-block-end: 1px solid variables.$Grayishblue;
+    }
+    &__navigation{
+        width: 175px;
+        border: blue 1px solid;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media(min-width: 1115px) {
+            width: 590px;
+        }
+    }
+    &__menu{
+        @media(min-width: 1115px) {
+            display: none;
+        }
+        &:hover{
+            cursor: pointer;    
+        }
+    }
+    
+    &__cart-avatar{
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        width: 70px;
+        justify-content: space-between;
+        @media(min-width: 1115px) {
+            width: 125px;
+        }
+    }
+    &__cart{
+        position: relative;
+
+        &--notification{
+            
+            width: 15px;
+            height: 12px;
+            border-radius: 16px;
+            background-color: variables.$Orange;
+            position: absolute;
+            top:-10px;
+            right: -5px;
+            text-align: center;
+            color: variables.$White;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__avatar{
+        width: 24px;
+        @media(min-width: 1115px) {
+            width: 48px;
+        }
+        &:hover{
+            cursor: pointer;
+            border: 2px solid variables.$Orange;
+            border-radius: 50%;
+        }
+    }
+}
+
