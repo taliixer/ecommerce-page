@@ -1,3 +1,26 @@
+@use 'variables';
 .navbar{
     display: none;
+    // border: 1px solid greenyellow;
+    width: 400px;
+    &__items{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link{
+        display: block;
+        text-decoration: none;
+        color: variables.$VeryVarkBlue;
+        font-size: 1.6rem;
+        font-weight: 700;
+        height: 112px;
+        padding-top:  46px;
+        &:hover{
+            border-bottom: 4px solid variables.$Orange;
+        }
+    }
+    @media (min-width: 1115px){
+        display: block;
+    }
 }

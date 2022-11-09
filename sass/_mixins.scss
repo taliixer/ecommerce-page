@@ -1,0 +1,25 @@
+@use 'variables';
+
+@mixin modal-background {
+    display: none;
+    background-color: variables.$Black-modal;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin gallery-arrows($left) {
+    background-color: variables.$White;
+    width: 40px;
+    padding: 12px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    left: $left;
+    top: 230px;
+    &:hover{
+        cursor: pointer;
+    }
+}

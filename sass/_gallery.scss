@@ -1,0 +1,25 @@
+@use 'variables';
+@use 'mixins';
+
+.gallery{
+    &__image-container{
+        border: 1px solid blue;
+        height: 350px;
+        width: 100%;
+        background-image: url(../images/image-product-1.jpg);
+        background-position-y: -35px;
+        background-size: cover;
+    }
+    &__arrow-previous{
+        @include mixins.gallery-arrows(15px);
+    }
+    &__arrow-next{
+        @include mixins.gallery-arrows(86%);
+    }
+    &__thumbnails{
+        display: none;
+        @media (min-width: 1115px){
+            display: block;
+        }
+    }
+}

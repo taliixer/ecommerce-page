@@ -3,6 +3,8 @@
 @use 'header';
 @use 'navbar';
 @use 'modal-navbar';
+@use 'gallery';
+
 
 .main-container{
     width: 100%;
@@ -10,6 +12,7 @@
     max-width: 450px;
     border:  1px solid red;
     margin: 0 auto;
+    position: relative;
     @media(min-width: 1115px) {
         min-width: 1115px;        
     }

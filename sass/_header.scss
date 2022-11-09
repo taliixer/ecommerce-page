@@ -12,7 +12,7 @@
     }
     &__navigation{
         width: 175px;
-        border: blue 1px solid;
+        // border: blue 1px solid;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -31,7 +31,6 @@
     }
     
     &__cart-avatar{
-        border: 1px solid black;
         display: flex;
         align-items: center;
         width: 70px;
@@ -44,7 +43,7 @@
         position: relative;
 
         &--notification{
-            
+            display: none;
             width: 15px;
             height: 12px;
             border-radius: 16px;
@@ -70,5 +69,6 @@
             border-radius: 50%;
         }
     }
+
 }
 
